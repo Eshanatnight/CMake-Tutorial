@@ -5,6 +5,8 @@ cmake_minimum_required( VERSION 3.10 )
 # This defines the Name of the project
 project( "CMAKE-Tutorial" )
 
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
+
 # adding subdirectories
 add_subdirectory( src/lib )
 

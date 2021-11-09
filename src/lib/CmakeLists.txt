@@ -17,4 +17,3 @@ target_include_directories( logger
 )
 # When listing the files to be included, it is good Practice to also include the header files.
 # also if the header files are not present then the CLI will throw an Error.
-

@@ -2,6 +2,10 @@
 /build
 /cmake-build-debug
 /cmake-build-release
+/lin-build
+/Win-build
+/win-build
+/Lin-build
 
 # IDE and Text Editors
 /.idea
@@ -10,4 +14,6 @@
 
 # Binaries and Builds
 /bin
-/build
+*.exe # Windows Specific
+*.lib # Windows Specific
+*.dll # Windows Specific
