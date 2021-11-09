@@ -1,10 +1,3 @@
-enum class LogLevel
-{
-    Debug,
-    Info,
-    Warning,
-    Error,
-    Fatal
-};
+#pragma once
 
-std::ostream& operator<<(std::ostream& os, LogLevel level);
+void log(const char* message);

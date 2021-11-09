@@ -1,0 +1,20 @@
+# The first name basically defines the name of the Library.
+# There is a parameter "STATIC || PRIVATE || SHARED" that defines the type of the library.
+# By default, the library is STATIC. When nothing is specified.
+add_library( logger
+    logger.cpp
+    logger.h
+)
+
+
+# To avoid specifing a path in the include statement,
+# we can attach properties to the add_library target.
+# The "." notion represents the current directory ( where this CmakeLists.txt is present).
+# Here PUBLIC refers to the propagation of the library folder as an include directory.
+target_include_directories( logger
+    PUBLIC
+    .
+)
+# When listing the files to be included, it is good Practice to also include the header files.
+# also if the header files are not present then the CLI will throw an Error.
+

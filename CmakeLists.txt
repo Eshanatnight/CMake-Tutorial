@@ -1,7 +1,21 @@
-cmake_minimum_required( VERSION 3.0.0 )
+# This defines the minimum version of cmake required
+# makes behaviour consistent across all versions of cmake
+cmake_minimum_required( VERSION 3.10 )
 
-add_executable(main
+# This defines the Name of the project
+project( "CMAKE-Tutorial" )
+
+# adding subdirectories
+add_subdirectory( src/lib )
+
+# This defines name of the executable and the the Source files
+# Generally the relative path is given to make the sources clear
+add_executable( main
     src/main.cpp
-    src/lib/lib.cpp
-    src/lib/lib.h
+)
+
+# This links the main executable to the library
+target_link_libraries( main
+    PRIVATE
+    logger
 )
