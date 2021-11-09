@@ -1,0 +1,7 @@
+cmake_minimum_required( VERSION 3.0.0 )
+
+add_executable(main
+    src/main.cpp
+    src/lib/lib.cpp
+    src/lib/lib.h
+)
